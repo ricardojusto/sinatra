@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Party Manager</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    	<link href="/main.css" rel="stylesheet">
+	</head>
+ 	<body>
+ 		<nav class='top-bar'>
+  			<form method="get" action="/">
+  				<input type = 'search' placeholder = 'Pesquisa' name = 'search'>
+  				<input type = 'submit'>
+  			</form>
+        <a href="/"><button>Parties List</button></a>
+  			<a href="/?sort=asc"><button>Ascending Date</button></a>
+  			<a href="/?sort=desc"><button>Descending Date</button></a>
+  			<a href="/?sort=outdated"><button>Active Parties</button></a>
+  		</nav>
+
+    <% if flash[:notice] %>
+      <p class="notice"><%= flash[:notice] %>
+    <% end %>
+    <% if flash[:error] %>
+      <p class="error"><%= flash[:error] %>
+    <% end %>
+
+    	<%= yield %>
+ 	</body>
+</html>

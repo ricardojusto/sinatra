@@ -1,0 +1,16 @@
+<h1>Available Products</h1>
+
+<ul>
+	<% @products.each do |product| %>
+	<li> 
+		<%= product.id %> » <%= product.name %> - <%= product.price %> - <%= product.brand %>
+		<button>
+			<a href="/product/<%= product.id %>">More Info</a>
+		</button>
+		<button>
+			<a href="/edit_form/<%= product.id %>">Edit</a>
+		</button>	
+	</li>
+	<% end%>
+</ul>
+<button><a href="/form">Form Page</a> </button>

@@ -1,0 +1,10 @@
+<h1>New User Information</h1>
+
+ 
+<form method="post" action="/parties/<%= @party.id %>/form">
+  To join to this party please enter your e-mail: 
+  New user: <input type="email" name="email" ><br>
+  <input type="submit" value="submit">
+</form>
+
+<a href="/"><button>Party List</button></a>

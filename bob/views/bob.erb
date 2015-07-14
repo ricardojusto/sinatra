@@ -1,0 +1,17 @@
+<% if @message%>
+	<!DOCTYPE html>
+	<head>
+	<link href="/main.css" rel="stylesheet">
+	</head>
+	<h1>Bob Chat</h1>
+	<div style="display:flex; margin-bottom: 20px">
+	<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUzkKRHli7kX6n4uzCEihGBU7GTa4yd_TD7ojQo1ow8DQsp0xijA" width="10%" height="20%" src="/bob.jpg">
+	<p style="margin-left:20px"></p>
+	</div>
+	Bob: <%= @message %>
+	<form method="GET" action
+	="/bob">
+	<input name="name">
+	<button>Submit</button>
+	</form>
+<% end %>

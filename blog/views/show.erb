@@ -1,0 +1,15 @@
+<h1>SHOW</h1>
+ 	<h3> Título: <%= @post.title %></h3>
+ 	<p> Assunto: <%= @post.body %></p>
+ 	<p> Criado a: <%= @post.created_at %></p>
+ 	<p>Comments:</p>
+ 	<p> <%= @comments.body %> </p>
+ 	<p> Commented by: <%= @comments.author %> </p>
+
+ 	<div>
+ 	<p><a href="/form/<%= @post.id%>"><button>Inserir Comentário</button></a></p>	
+ 	</div>
+ 	<p><a href="/"><button>Voltar ao Index</button></a></p>
+
+
+ 

@@ -1,0 +1,14 @@
+<h1>New Page</h1>
+<h2>The new list of products:</h2>
+
+<ul>
+	<% @products.each do |product| %>
+		<li> <%= product.id %> » <%= product.name %> - <%= product.price %> - <%= product.brand %> </li>
+	<% end%>
+</ul>
+
+<ul>Please choose your option
+	<li><a href="/list"><button>List of Products</button></a></li>
+	<li><a href="/form"><button>Add New Products</button></a></li>
+</ul>
+

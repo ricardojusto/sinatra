@@ -1,0 +1,36 @@
+<h1>INDEX</h1>
+
+ <ul>
+	 <% @posts.each do |post| %>
+	 	<li class="list-index"> 
+	 		<p><a href="/show/<%= post.id %>"> 
+	 		<%= post.author %> - <%= post.title %></p>
+	 	</li>
+	 <% end%>
+ </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  <ul>
+	 <% @comments.each do |comment| %>
+	 	<li> 
+	 		<%= comment.author %> - <%= comment.body %> 
+	 	</li>
+	 <% end %>
+ </ul> -->
+

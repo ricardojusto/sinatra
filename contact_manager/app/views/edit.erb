@@ -1,0 +1,8 @@
+<h1>Edit User Page</h1>
+
+
+<form method="post" action="/edit/<%= @user.id %>">
+  Name: <input type="text" name="name" value="<%= @user.name %>"><br>
+  Email: <input type="text" name="email" value="<%= @user.email %>"><br>
+  <input type="submit" value="Submit form">
+</form>

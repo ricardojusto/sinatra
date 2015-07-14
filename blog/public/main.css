@@ -1,0 +1,30 @@
+h1 {
+	margin: auto;
+	margin-bottom: 2%;
+	background-color: gray;
+	text-align: center;
+
+}
+
+.list-index {
+	list-style-type: none;
+}
+
+.container-header {
+	color: white;
+	position: absolute;
+    right: 0px;
+}
+
+.container-footer {
+	margin:auto;
+	text-align: center;
+	background-color: black;
+}
+.blog-image {
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 250px;
+	height: 150px;
+}

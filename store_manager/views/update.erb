@@ -1,0 +1,7 @@
+<h1>Update Page</h1>
+
+<form method="GET" action="/update/<%= @products.id %>">
+  <input name="name" type="text" value="<%= @products.name %>">
+  <input name="price" type="text" value="<%= @products.price %>">
+  <input name="brand" type="text" value="<%= @products.brand %>">
+</form>

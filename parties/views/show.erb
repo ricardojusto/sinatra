@@ -1,0 +1,31 @@
+<h1>Show each Party Individually</h1>
+
+<ul>
+	<li>
+	<%= @party.id %>
+ 	<%= @party.theme %>  
+ 	<%= @party.date %> 
+ 	<%= @party.description %> 
+ 	</li>
+ </ul>
+ <style type="text/css">
+      html, body, #map-canvas { height: 80%; width: 80%; margin: 0; padding: 0;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGTNUJEXXN8LLQfpRpgMif8vAub9rmCoc">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: -34.397, lng: 150.644},
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+<div id="map-canvas"></div>
+ <a href="/"><button>Party List</button></a>

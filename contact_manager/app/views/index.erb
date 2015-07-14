@@ -1,0 +1,23 @@
+<h1>Home Page</h1>
+<h2>Hello</h2>
+<form class="user-form" action="/users/create" method="post">
+  <h2>New user</h2>
+  <label>Name: <input type="text" name="name"></label>
+  <label>Email: <input type="text" name="email"></label>
+  <button type="submit">Create new user</button>
+ </form>
+
+<ul>
+<% @users.each do |user| %>
+	<li>
+		ID:  <%= user.id %><br> 
+		NAME:  <%= user.name %><br>
+		EMAIL:  <%= user.email %><br>
+		<a href="/edit/<%= user.id %>">Edit User</a>
+		
+		<form class="user-form" action="/delete/<%= user.id %>" method="post">
+		<button type="submit">Delete</button></form>
+	
+	</li>
+<% end %>
+</ul>

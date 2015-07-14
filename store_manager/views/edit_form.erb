@@ -1,0 +1,8 @@
+<h1>Edit Form</h1>
+
+<form method="post" action="/update/<%= @products.id %>">
+  Name: <input type="text" name="name" value="<%= @products.name%>"><br>
+  Price: <input type="text" name="price" value="<%= @products.price%>"><br>
+  Brand: <input type="text" name="brand" value="<%= @products.brand%>"><br>
+  <input type="submit" value="Submit form">
+</form>

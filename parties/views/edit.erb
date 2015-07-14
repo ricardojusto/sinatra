@@ -1,0 +1,8 @@
+<h1>Edit your Party</h1>
+
+<form method="post" action="/update/<%= @party.id %>">
+  Theme: <input type="text" name="theme" value="<%= @party.theme%>"><br>
+  Date: <input type="date" name="date" value="<%= @party.date%>"><br>
+  Members: <input type="text" name="description" value="<%= @party.description%>"><br>
+  <input type="submit" value="Submit form">
+</form>

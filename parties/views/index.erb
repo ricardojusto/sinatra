@@ -1,0 +1,15 @@
+<h1 class="title">Welcome to the Party Manager</h1>
+
+<ul>
+	<% @party.each do |party| %>
+	<li> 
+		<%= party.id %><br> 
+		TEMA: <%= party.theme %><br>
+		DATA: <%= party.date %><br>
+		DESCRIPTION: <%= party.description %><br> 
+		USERS: <%= party.users %>
+	</li>
+	<li><a href="/show/<%= party.id %>"><button>Party Detail</button></a><a href="/<%= party.id %>/edit"><button>Edit Party</button></a><a href="/new"><button>Create a New Party</button></a><a href="/remove/<%= party.id %>"><button>Remove Party</button></a><a href="/parties/<%= party.id %>/form"><button>Add a new user</button></a><a href="/remove/user/<%= party.id %>"><button>Remove User</button></a></li>
+	<% end%>
+</ul>
+

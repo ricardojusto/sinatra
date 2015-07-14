@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<link href="/main.css" rel="stylesheet">
+		<title>My Blog</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+  			<div class="container-header">
+  				<ul class="navbar -right">
+    				<button type="button" class="btn btn-primary btn-lg active"> <a href="/">Home</button></a></button>
+					<button type="button" class="btn btn-primary btn-lg active"> <a href="https://google.com">Google</a></button>
+				</ul>
+  			</div>
+		</nav>
+
+		<div class="blog-image">
+			<img class="blog-image" src="http://www.internetsegura.pt/files/large/1014">	
+		</div>
+
+		<%= yield %>
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+  			<div class="container-footer">
+    		FOOTER
+  			</div>
+		</nav> 
+	</body>
+
+</html>

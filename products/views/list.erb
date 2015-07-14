@@ -1,0 +1,7 @@
+<h1>List Page</h1>
+
+<!-- <form method="GET" action="/list"> -->
+
+ <% @products.each do |product| %>
+ <li> <%= product.name %> - <%= product.price %> - <%= product.brand %> </li>
+ <% end%>
