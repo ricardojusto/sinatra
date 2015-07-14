@@ -2,8 +2,11 @@
 <h2>Hello</h2>
 <form class="user-form" action="/users/create" method="post">
   <h2>New user</h2>
-  <label>Name: <input type="text" name="name"></label>
+  <label>Fisrt Name: <input type="text" name="first_name"></label>
+  <label>Last Name: <input type="text" name="last_name"></label>
   <label>Email: <input type="text" name="email"></label>
+  <label>Phone Number: <input type="text" name="phone_number"></label>
+  <label>Address: <input type="text" name="address"></label>
   <button type="submit">Create new user</button>
  </form>
 
@@ -11,8 +14,11 @@
 <% @users.each do |user| %>
 	<li>
 		ID:  <%= user.id %><br> 
-		NAME:  <%= user.name %><br>
+		FIRST NAME:  <%= user.first_name %><br>
+		LAST NAME:  <%= user.last_name %><br>
 		EMAIL:  <%= user.email %><br>
+		PHONE NUMBER:  <%= user.phone_number %><br>
+		ADDRESS:  <%= user.address %><br>
 		<a href="/edit/<%= user.id %>">Edit User</a>
 		
 		<form class="user-form" action="/delete/<%= user.id %>" method="post">

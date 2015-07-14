@@ -2,7 +2,10 @@
 
 
 <form method="post" action="/edit/<%= @user.id %>">
-  Name: <input type="text" name="name" value="<%= @user.name %>"><br>
+  First Name: <input type="text" name="first_name" value="<%= @user.first_name %>"><br>
+  Last Name: <input type="text" name="last_name" value="<%= @user.last_name %>"><br>
   Email: <input type="text" name="email" value="<%= @user.email %>"><br>
+  Phone Name: <input type="text" name="phone_number" value="<%= @user.phone_number %>"><br>
+  Address: <input type="text" name="address" value="<%= @user.address %>"><br>
   <input type="submit" value="Submit form">
 </form>

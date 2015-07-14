@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    normalize.css removes cross-browser differences in defaults, e.g.,
+  <!--normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
-    See: http://necolas.github.com/normalize.css/
-  -->
+    See: http://necolas.github.com/normalize.css/-->
   <link rel="stylesheet" href="/stylesheets/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
+  <!--application.css is where you put your styles-->
   <link rel="stylesheet" href="/stylesheets/application.css">
-
   <script src="/javascript/application.js"></script>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   <title></title>
+
 </head>
+
 <body>
 
-</form>
+  <nav class="nav-bar">
+    <span><form method="get" action="/">
+      <input type = 'search' placeholder = 'Pesquisa' name = 'search'>
+        <input type = 'submit'>
+    </form></span>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+      <span><a href="/?sort=asc"><button>Ascending Contact</button></a></span>
+      <span><a href="/?sort=desc"><button>Descending Contact</button></a></span>
+  </nav>
 
   <%= yield %>
 </body>
