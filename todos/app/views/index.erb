@@ -1,0 +1,39 @@
+<h1>To-Do List</h1>
+
+
+
+<div>
+	<form class="note" method="post" action="/">
+		<input type="text" name="title">
+		<input type="submit" name="submit" value="Remind me">
+	</form>
+</div>
+
+
+Not completed
+<ul>
+	<% @notcomplete.each do |todo| %>
+	<li>
+	This is your note: <%= todo.title %><br>
+	This is your status: <%= todo.completed %>
+		<a href="/complete/<%= todo.id %>">Complete</a><br>
+	This is the create date: <%= todo.created_at %><br>
+	This is the updated date: <%= todo.updated_at %><br> <a href="/delete/<%= todo.id %>">Delete Post</a>
+	<p></p>
+	</li>
+	<% end %>
+</ul>
+
+Completed
+<ul>
+	<% @complete.each do |todo| %>
+	<li>
+	This is your note: <%= todo.title %><br>
+	This is your status: <%= todo.completed %>
+		<a href="/complete/<%= todo.id %>">Complete</a><br>
+	This is the create date: <%= todo.created_at %><br>
+	This is the updated date: <%= todo.updated_at %><br> <a href="/delete/<%= todo.id %>">Delete Post</a>
+	<p></p>
+	</li>
+	<% end %>
+</ul>
