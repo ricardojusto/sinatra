@@ -1,3 +1,9 @@
 .nav-bar {
 	display: flex;
 }
+
+.user-form {
+	display: flex;
+	background-color: gray;
+}
+
